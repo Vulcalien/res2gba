@@ -2,7 +2,7 @@
 :doctype: manpage
 :manmanual: Manual for res2gba
 :mansource: res2gba
-:revdate: 2025-03-14
+:revdate: 2026-03-19
 :docdate: {revdate}
 
 == NAME
@@ -24,22 +24,20 @@ resources to convert. See FILE FORMAT for details.
 === Resource types
 *tilesets*::
 Images composed of tiles of a given size, converted into arrays of type
-*u8* (unsigned 8-bit). Each tile is made up of 8x8 blocks. To match the
-behavior of GBA hardware, the scanning order is: tiles, blocks, pixels.
+*u8*. Each tile is made up of 8x8 blocks. To match the behavior of GBA
+hardware, the scanning order is: tiles, blocks, pixels.
 
 *images*::
-Generic images, converted into arrays of type *u8* (unsigned 8-bit) or
-*u16* (unsigned 16-bit), depending on the bits-per-pixel property.
-Pixels are scanned line by line.
+Generic images, converted into arrays of type *u8* or *u16*, depending
+on the _bpp_ property. Pixels are scanned line by line.
 
 *palettes*::
 Images acting as lists of 16-bit colors, converted into arrays of type
-*u16* (unsigned 16-bit). Pixels are scanned line by line.
+*u16*. Pixels are scanned line by line.
 
 *files*::
-Generic files translated directly into arrays of type *u8* (unsigned
-8-bit) without applying any conversion. These may contain text, raw
-audio, level files...
+Generic files, stored directly into arrays of type *u8* without applying
+any conversion. These may contain text, raw audio, level files...
 
 === Color mapping of images
 Images converted to 4 or 8 bits-per-pixel are encoded using indexed
