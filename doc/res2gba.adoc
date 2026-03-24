@@ -188,4 +188,4 @@ output_dir = 'src/res'
 ----
 
 == AUTHORS
-*res2gba* was written by Vulcalien <\vulcalien@vulcalien.net>.
+*res2gba* was written by Vulcalien.
