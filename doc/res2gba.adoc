@@ -2,7 +2,7 @@
 :doctype: manpage
 :manmanual: Manual for res2gba
 :mansource: res2gba
-:revdate: 2026-03-19
+:revdate: 2026-04-18
 :docdate: {revdate}
 
 == NAME
@@ -96,8 +96,7 @@ This property can either be a list of two integers (width and height) or
 a single integer if width and height are the same.
 
 *bpp* - integer::
-Bits-per-pixel (or color depth) of the tileset. Allowed values are *4*
-and *8*.
+Color depth of the tileset. Allowed values are *4* and *8*.
 
 *palette* - string (optional)::
 Pathname of the palette used to map colors to their index, relative to
@@ -111,8 +110,7 @@ integer. Color mappings specified here take priority over the palette.
 
 === Images properties
 *bpp* - integer::
-Bits-per-pixel (or color depth) of the image. Allowed values are *8* and
-*16*.
+Color depth of the image. Allowed values are *8* and *16*.
 
 *palette* - string (optional)::
 Same as the property for tilesets: see above.
